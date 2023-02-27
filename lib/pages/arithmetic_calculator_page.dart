@@ -7,12 +7,13 @@ class Arithmetic extends Builder{
   @override
   void builder() {
     super.builder();
-    String text = io.textConsole("Calculate example(2+2*4*12): ");
-    print("Result : ${ar.calculate(text, ar.doOperation)}");
-    if(text == "back"){
-      HomePage();
-    }else {
-      Arithmetic();
-    }
+
+    print("0 -> Back");
+    String text = io.textConsole("Calculate Ex->(2+2): ");
+
+    io.console("Result : ${ar.calculate(text, ar.doOperation)}");
+
+    if(text == "0") HomePage();
+    else Arithmetic();
   }
 }

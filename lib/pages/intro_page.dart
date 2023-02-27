@@ -9,8 +9,8 @@ class IntroPage {
 
   void welcome() {
     print("Welcome to Calculator App!");
+    print("Go to Home Page Enter ->");
     String text = io.text;
     HomePage();
-
   }
 }

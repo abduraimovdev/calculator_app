@@ -1,10 +1,11 @@
 import 'package:calculator_app/pages/date_page.dart';
-
+import 'package:calculator_app/pages/arithmetic_calculator_page.dart';
 import '../services/io_service.dart';
 import '../services/utils.dart';
 
 class HomePage {
   HomePage() {
+    print("\n"*2);
     print("Welcome To Home Page!");
     viewHome();
   }
@@ -32,7 +33,7 @@ class HomePage {
         }
       case 1:
         {
-          // CartPage();
+          Arithmetic();
         }
         break;
       case 2:
