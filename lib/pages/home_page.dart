@@ -19,10 +19,13 @@ class HomePage {
         continue exit;
       }
       case 1: {
+        // CartPage();
       } break;
       case 2: {
+        // CategoryPage();
       } break;
       case 3: {
+        // IntroPage();
       } break;
       exit: default: {
         print("Thank you for attention! Exit!");
