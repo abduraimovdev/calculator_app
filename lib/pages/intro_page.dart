@@ -9,7 +9,7 @@ class IntroPage {
 
   void welcome() {
     print("Welcome to Calculator App!");
-    int text = (io.number ?? 1).toInt();
+    String text = io.text;
     HomePage();
 
   }

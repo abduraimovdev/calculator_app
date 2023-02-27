@@ -8,9 +8,9 @@ class IOService {
     return word.trimRight();
   }
 
-  num? get number {
+  int get number {
     String word = stdin.readLineSync() ?? '';
-    return num.tryParse(word.trim());
+    return int.tryParse(word.trim())??0;
   }
 
   void console(Object? object) {

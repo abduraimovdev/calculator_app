@@ -1,3 +1,5 @@
+import 'package:calculator_app/pages/date_page.dart';
+
 import '../services/io_service.dart';
 import '../services/utils.dart';
 
@@ -19,7 +21,7 @@ class HomePage {
     print("9. Trigonometry Page");
     print("10. History Page");
 
-    int page = (io.number ?? 0).toInt();
+    int page = io.number ;
 
     print('\n\n');
     switch (page) {
@@ -41,6 +43,11 @@ class HomePage {
       case 3:
         {
           // IntroPage();
+        }
+        break;
+        case 7:
+        {
+           DatePage();
         }
         break;
       default:
