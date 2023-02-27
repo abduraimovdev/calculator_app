@@ -1,4 +1,6 @@
+ArithmeticCalculator ar = ArithmeticCalculator();
 class ArithmeticCalculator {
+
   double calculate(String str, String Function(String op, String str) func) {
     str = func('/', str);
     str = func('*', str);
@@ -7,7 +9,7 @@ class ArithmeticCalculator {
     return double.parse(str);
   }
 
-  String _doOperation(String operation, String text) {
+  String doOperation(String operation, String text) {
     while (text.contains(operation)) {
       text = text.replaceAllMapped(
         RegExp('(\\d*\\.?\\d+[$operation]\\d*\\.?\\d+)'),
