@@ -16,4 +16,19 @@ class IOService {
   void console(Object? object) {
     stdout.write(object);
   }
+  String textConsole(Object? object) {
+    console(object);
+    return text;
+  }
+  num? numConsole(Object? object) {
+    console(object);
+    return number;
+  }
+
+
+
+  Object? get nums {
+    return stdin.readLineSync();
+  }
+
 }
