@@ -29,7 +29,6 @@ class Trigometr {
     }
     else {
       Utils.exit();
-      break;
     }
   }
 }
