@@ -1,5 +1,7 @@
 import '../models/trigonometriya_model1.dart';
 import '../services/io_service.dart';
+import '../services/utils.dart';
+import 'home_page.dart';
 
 class Trigometr {
   Trigometr() {
@@ -23,10 +25,11 @@ class Trigometr {
       trigonom();
     }
     else if (numb2 == 2) {
-      trigonom();//
+      HomePage();
     }
     else {
-      trigonom();
+      Utils.exit();
+      break;
     }
   }
 }
