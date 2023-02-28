@@ -11,6 +11,7 @@ class Trigometr {
     trigonom();
   }
 
+
   void trigonom() {
     String text7 = io.text;
     trigonometry(text7);
