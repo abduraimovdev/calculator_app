@@ -1,3 +1,4 @@
+import 'package:calculator_app/pages/data_convertor_page.dart';
 import 'package:calculator_app/pages/date_page.dart';
 import 'package:calculator_app/pages/arithmetic_calculator_page.dart';
 import '../services/io_service.dart';
@@ -41,9 +42,9 @@ class HomePage {
           // CategoryPage();
         }
         break;
-      case 3:
+      case 5:
         {
-          // IntroPage();
+         DataConverter();
         }
         break;
         case 7:

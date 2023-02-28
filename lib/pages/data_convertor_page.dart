@@ -17,35 +17,36 @@ class DataConverter extends Builder{
 6 - Megabyte -> Kilobyte
     ''');
     int command = io.number;
-    io.numConsole("");
+    num sum = 0;
     switch(command){
       case 0:{
         HomePage();
       }break;
       case 1:{
-
+        sum = (io.numConsole("Byte -> (Kilobyte) :") ?? 0) / 1000;
       }break;
       case 2:{
-        HomePage();
+        sum = (io.numConsole("Kilobyte -> (Byte) :") ?? 0) * 1000;
       }break;
       case 3:{
-        HomePage();
+        sum = (io.numConsole("Byte -> (Megabyte) :") ?? 0) * 1e-6;
       }break;
       case 4:{
-        HomePage();
+        sum = (io.numConsole("Megabyte -> (Byte) :") ?? 0) / 1e+6;
       }break;
       case 5:{
-        HomePage();
+        sum = (io.numConsole("Kilobyte -> (Megabyte) :") ?? 0) / 0.001;
       }break;
       case 6:{
-        HomePage();
+        sum = (io.numConsole("Megabyte -> (Kilobyte) :") ?? 0) * 1000;
       }break;
       default:{
         builder();
       }
     }
+    print("Result : $sum");
+    builder();
   }
-
 
 
 }

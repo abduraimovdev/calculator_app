@@ -3,6 +3,6 @@ class Builder {
     builder();
   }
   void builder() {
-      print("\n"*3);
+      print("\n"*2);
   }
 }
